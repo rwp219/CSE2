@@ -1,3 +1,7 @@
+// Reed Pinterich
+// Brian Chen CSE 002
+// 11 February 2016
+// This program calculates the volume of a square pyramid given the base length and the height
 // Import the Scanner Class as shown in lecture
 import java.util.Scanner;
 public class Pyramid {

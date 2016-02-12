@@ -1,3 +1,7 @@
+// Reed Pinterich
+// Brian Chen CSE 002
+// 11 February 2016
+// This program converts a measurement given in meters into inches
 // import the scanner class as shown in lecture
 import java.util.Scanner;
 public class Convert {
