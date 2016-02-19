@@ -23,7 +23,7 @@ public class Check {
         double split = (total/people);
         // ints created to chop off extra decimals
         int dollars = (int)split;
-        int change = (int)((split * 100) % 100);
+        int change = (int)((split * 100) % 100.0);
         // print the results
         System.out.println("The amount each person should pay is $" + dollars + '.' + change);
     }
