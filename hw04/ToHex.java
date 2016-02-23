@@ -20,9 +20,8 @@ public class ToHex {
         String modGreen;
         String divBlue;
         String modBlue;
-        if ((green > 255 || green < 0) || (red > 255 || red < 0) || (blue > 255 || blue < 0)) {
-            System.out.println("Sorry thats an invalid input, try again.");
-        }
+        if ((green <= 255 && green >= 0) && (red <= 255 && red >= 0) && (blue <= 255 && blue >= 0)) {
+            
         int partRed = red / 16;
         int breakRed = red % 16;
         int partGreen = green / 16;
@@ -205,6 +204,10 @@ public class ToHex {
             default:
             System.out.println(breakBlue);
             break;
+        }
+        }
+        else {
+            System.out.println("Sorry that's an invalid input, try again.");
         }
     }
 }
