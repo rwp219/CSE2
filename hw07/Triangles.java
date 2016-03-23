@@ -10,7 +10,7 @@ public class Triangles {
                 int num = scan.nextInt();
                 if (num > 4 && num < 31) {
                     int knot = num;
-                    /*for (int i = 1; i <= num; i++) {
+                    for (int i = 1; i <= num; i++) {
                         for (int j = 1; j <= i; j++) {
                             System.out.print(i);
                         }
@@ -21,8 +21,8 @@ public class Triangles {
                             System.out.print(m);
                         }
                         System.out.println("");
-                    }*/
-                    /*int p = 1;
+                    }
+                    int p = 1;
                     int q = 1;
                     int y = num-1;
                     int z = y;
@@ -44,7 +44,7 @@ public class Triangles {
                         z = y - 1;
                         System.out.println("");
                         y--;
-                    }*/
+                    }
                     int g = 1;
                     int h = 1;
                     int r = num - 1;
