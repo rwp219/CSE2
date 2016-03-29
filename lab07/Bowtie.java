@@ -1,34 +1,39 @@
 public class Bowtie {
     public static void main(String[] args) {
-        int nStars = 9;
-        for (int i = 0; i < 9; i++) {
-            switch(i) {
-                case(0):
-                    System.out.print("");
-                    break;
-                case(1):
-                    System.out.print("   ");
-                    break;
-                case(2):
-                    System.out.print("      ");
-                    break;
-                case(3):
-                    System.out.print("         ");
-                    break;
-                case(4): 
-                    System.out.print("            ");
-                    break;
-                case(5):
-                    System.out.print("         ");
-                    break;
-                case(6):
-                    System.out.print("      ");
-                    break;
-                case(7):
-                    System.out.print("   ");
-                    break;
-                case(8):
-                    System.out.print("");
+        Scanner scan = new Scanner(System.in);
+        if (scan.hasNextInt()) {
+            int nStars = scan.nextInt();
+            if (nStars > 2 && nStars < 34 && nStars%2 = 1) {
+                for (int i = 0; i < nStars; i++) {
+                    switch(i) {
+                        case(0):
+                            System.out.print("");
+                            break;
+                        case(1):
+                            System.out.print("   ");
+                            break;
+                        case(2):
+                            System.out.print("      ");
+                            break;
+                        case(3):
+                            System.out.print("         ");
+                            break;
+                        case(4): 
+                            System.out.print("            ");
+                            break;
+                        case(5):
+                            System.out.print("         ");
+                            break;
+                        case(6):
+                            System.out.print("      ");
+                            break;
+                        case(7):
+                            System.out.print("   ");
+                            break;
+                        case(8):
+                            System.out.print("");
+                            break;
+                    }
             }
             for (int j = nStars; j > 0; j--) {
                 System.out.print(" * ");
@@ -49,6 +54,7 @@ public class Bowtie {
                     break;
             }
             System.out.println("");
+            }
         }
     }
 }
