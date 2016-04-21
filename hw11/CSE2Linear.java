@@ -19,7 +19,8 @@ public class CSE2Linear {
         System.out.println("");
         System.out.println("Enter a grade to be searched for");
         int search = scanner.nextInt();
-        for (int m = 0; m < user.length; m++) 
+        Binary(user);
+        /*for (int m = 0; m < user.length; m++) 
         {
             if (user[m] == search) 
             {
@@ -34,7 +35,7 @@ public class CSE2Linear {
                     System.out.println("Search not found.");
                 }
             }
-        }
+        }*/
         int[] scramble = Scramble(user);
         System.out.println("The scrambled array is ");
         for (int s = 0; s < scramble.length; s++)
@@ -99,5 +100,28 @@ public class CSE2Linear {
             array[b] = temp;
         }
         return array;
+    }
+    public static void Binary(int[] array) {
+        int user = Prompt();
+        int first = array[0];
+        int last = array[array.length-1];
+        int loc = 0;
+        while (first < last) {
+            int middle = (first + last)/2;
+            if (user > array[middle]) {
+                first = middle + 1;
+            }
+            else {
+                last = middle;
+            }
+            if (user == array[middle]) {
+                loc = middle;
+                System.out.println("The number was found after " + loc + " iterations")
+            }
+            else {
+                first = last;
+                System.out.println("Number not found");
+            }
+        }
     }
 }
